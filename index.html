@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zyra's Christening Proposal</title>
+<style>
+*{box-sizing:border-box}
+body{
+margin:0;font-family:Georgia,serif;text-align:center;
+color:#fffaf2;
+background:linear-gradient(145deg,#24152e,#345447,#64466b);
+min-height:100vh;padding:24px 14px;
+}
+.card{
+max-width:480px;margin:25px auto;padding:30px 22px;
+border:1px solid #e8d4b5;border-radius:24px;
+background:#ffffff12;box-shadow:0 12px 35px #0004;
+}
+.flower{font-size:35px}
+h1{font-size:36px;line-height:1.2;color:#ffe6bf}
+h2{font-size:25px;color:#f8d9e9}
+p{font-size:18px;line-height:1.8}
+.name{font-size:27px;color:#f8d9e9;font-weight:bold}
+button{
+border:0;border-radius:25px;padding:14px 24px;
+margin:8px;font-size:16px;font-weight:bold;cursor:pointer;
+background:#f6dfbd;color:#35223a;
+}
+#answer{font-size:20px;color:#ffe6bf;line-height:1.6}
+footer{font-size:14px;margin-top:28px;color:#eee0ef}
+</style>
+</head>
+<body>
+<div class="card">
+<div class="flower">🕊️ 🌸 🕊️</div>
+<p>WITH LOVE AND A GRATEFUL HEART</p>
+<h1>A Special Invitation</h1>
+<h2>Will You Be Our Baby's</h2>
+<div class="name">Ninang &amp; Ninong?</div>
+<p>
+Dear Ninang and Ninong,<br><br>
+Our little angel <strong>Zyra</strong> is about to begin a beautiful
+journey of faith. We would be so happy to have you as special
+people in her life, guiding her with love, kindness, and prayers.
+</p>
+<p>Will you be part of Zyra's christening journey?</p>
+<button onclick="reply('Yay! You made our hearts happy! 💗 We are so blessed to have you as Zyra’s godparent!')">Yes, with love! 💗</button>
+<button onclick="reply('Thank you for being part of Zyra’s special journey! 🌸')">Of course! 🌸</button>
+<p id="answer"></p>
+<div class="flower">🤍 🌿 🤍</div>
+<footer>With all our love,<br>Zyra and Family</footer>
+</div>
+<script>
+function reply(message){
+document.getElementById('answer').textContent=message;
+}
+</script>
+</body>
+</html>
